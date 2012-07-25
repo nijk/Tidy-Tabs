@@ -8,7 +8,7 @@
  *  Namespace: ui
  *  pluginName: tabs
  *
- *  It allows tabs to be collected into a 'More' tab and appended to the when there is not enough horizontal space.
+ *  It allows tabs to be collected into a 'more' tab which is appended when there is not enough horizontal space.
  *
  *  This plugin must be used as an extension to jQuery UI .tabs() and called after the _create() method of .tabs()
  *  has been called.
