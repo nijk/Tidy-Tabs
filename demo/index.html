@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>jQuery demo: Tidy tabs</title>
+    <link href="http://blueprintcss.org/blueprint/screen.css"
+          type="text/css" rel="stylesheet">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" rel="stylesheet">
+    <style>
+        body{padding:20px;}
+        #tabs .ui-tabs-nav-more{position:relative;}
+        #tabs .ui-tabs-nav-more-link{float:left;}
+        #tabs .ui-tabs-nav-more-list{position:absolute; top:100%; right:-1px; width:auto; margin:0; padding:0; background:#fff; list-style:none; border-top:0 none;}
+        #tabs .ui-tabs-nav-more-list-item{float:none; margin:0; white-space:pre;}
+        .ui-tabs-nav-more-list-item:hover{background-color:#efefef;}
+        #tabs .ui-tabs-nav-more-list-item a{display:block; float:none;}
+        /*#tabs .ui-tabs-nav-more-list-item a:hover{background-color:#efefef;}*/
+    </style>
+</head>
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tab-1">Tab one</a></li>
+            <li><a href="#tab-2">Tab two</a></li>
+            <li><a href="#tab-3">Tab three</a></li>
+            <li><a href="#tab-4">Tab four</a></li>
+            <li><a href="#tab-5">Tab five</a></li>
+            <li><a href="#tab-6">Tab six</a></li>
+            <li><a href="#tab-7">Tab seven</a></li>
+            <li><a href="#tab-8">Tab eight</a></li>
+            <li><a href="#tab-9">Tab nine</a></li>
+            <li><a href="#tab-10">Tab ten</a></li>
+            <li><a href="#tab-11">Tab eleven</a></li>
+            <li><a href="#tab-12">Tab twelve</a></li>
+        </ul>
+        <div id="tab-1">
+            <h2>My first tab</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nulla purus, convallis eget varius quis, aliquam scelerisque mauris. Donec sit amet mauris ut arcu placerat malesuada sed in erat. Mauris nec tincidunt tortor. Nam auctor congue sem. Fusce cursus augue tincidunt nisi dignissim quis euismod velit placerat. Praesent erat lacus, tempor vitae pretium sed, mattis at lectus. Nam pulvinar sapien eget sem eleifend ac ornare augue dictum. Proin in tortor nibh. Fusce congue lobortis sem, luctus faucibus leo facilisis in. Duis eget lorem mauris, eu laoreet arcu. Vestibulum sed nulla magna, nec lacinia libero. Etiam eget odio elit. Nulla vestibulum scelerisque facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus nulla quam, ultrices ac scelerisque nec, malesuada et sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+        <div id="tab-2">
+            <h2>My second tab</h2>
+            <p>Phasellus volutpat velit non velit mollis rutrum. Sed non tellus neque, ac vulputate tellus. Quisque eu gravida arcu. Sed molestie laoreet risus at cursus. Nulla sollicitudin rutrum libero, in auctor leo lacinia in. Vestibulum eu urna odio, sed faucibus massa. Sed feugiat ornare mauris, quis blandit mauris aliquet non. Phasellus id massa at nibh pellentesque adipiscing ut nec nisl.</p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+    <script src="../jquery.tidytabs.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#tabs').tabs().tabs('tidy');
+        });
+    </script>
+</body>
+</html>
